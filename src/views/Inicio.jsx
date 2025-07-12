@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import ReactPlayer from 'react-player'
   import video from '../assets/video.mp4'
   import Vertical from '../assets/vertical.mp4'
