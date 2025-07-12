@@ -51,7 +51,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/nosotros' element={<Nosotros/>}/>
           <Route path='/showroom' element={<Showroom/>}/>
           <Route path='/servicios' element={<Servicios/>}/>
-          <Route path='/Contacto' element={<Contacto/>}/>
+          <Route path='/contacto' element={<Contacto/>}/>
           <Route path='/razones' element={<Razones/>}/>
           <Route path='/reactiva' element={<Reactiva/>}/>
           <Route path='/equipo' element={<Equipo/>}/>
@@ -59,7 +59,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/porfolio" element={<Porfolio />} />
            <Route path="/formula" element={<Formula />} />
             <Route path="/cockies" element={<Cockies />} />
-          
+          <Route path="*" element={<h1>404 - Página no encontrada</h1>} />
         {/* <Route path='/login' element={localStorage.getItem('Usuario') == null? <Login/>:<Inicio/>}/>
         <Route path ='/login/nuevoUsuario' element = {<NuevoUsuario/>}/>
         <Route path ='/productos' element = {localStorage.getItem('Usuario') ==null? <Login/>:<Productos/>}/>
