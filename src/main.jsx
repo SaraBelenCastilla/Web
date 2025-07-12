@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
-import {HashRouterRouter as Router,Routes,Route,useLocation} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route,useLocation} from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Inicio from './views/Inicio'
