@@ -28,26 +28,7 @@ import Hablamos from './Contacto'
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react'
 
- useEffect(() => {
-    const controller = new AbortController();
-    const options = {
-      metod: "GET",
-      headers: {
-        "content-type": "application/json",
-      },
-      signal: controller.signal,
-    };
-    fetch(VITE_LINK_API_LOCALHOST, options)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log('bien');
-        // Aquí puedes hacer algo con los datos recibidos, como guardarlos en el estado
-      })
-  //control de errores
-      .catch((err) => console.log(err))
 
-      .finally(() => controller.abort());
-  }, []);
 
 const Inicio =()=>{
   const isMobile = useMediaQuery({ maxWidth: 1025 }); // Detecta si la pantalla es menor a 7
