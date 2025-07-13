@@ -43,7 +43,7 @@ const Inicio =()=>{
     <section id='section1' className='primera'>
       <div className='loop'>
      
-         <Suspense fallback={<div>Cargando video...</div>}>
+         {/* <Suspense fallback={<div>Cargando video...</div>}>
       <ReactPlayer
         url={video}
         playing={true}
@@ -53,7 +53,7 @@ const Inicio =()=>{
         controls={true}
       />
     </Suspense>
-       
+        */}
            {/* <iframe
             src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
             width="100%"
@@ -70,7 +70,7 @@ const Inicio =()=>{
                loop
                autoplay
              /></a> 
-      <div className='loop__vertical'>
+      {/* <div className='loop__vertical'>
      <Suspense fallback={<div>Cargando video...</div>}>
      <ReactPlayer
       url={Vertical}
@@ -80,7 +80,7 @@ const Inicio =()=>{
       height="100%"
       controls={true}
     /> 
-   </Suspense>
+   </Suspense> */}
      {/* <iframe
       src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
       width="100%"
