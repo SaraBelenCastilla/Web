@@ -45,13 +45,7 @@
     font-weight: 900;
     font-style: normal;
   }
-  @font-face {
-    font-family: "nickel-gothic-variable";
-    src: url("../assets/fonts/nickel-gothic-variable.woff2") format("woff2"),
-         url("../assets/fonts/nickel-gothic-variable.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
+  
    /* Reseteamos los margin y paddings de todas las etiquetas */
    * {
     margin: 0;
@@ -1808,7 +1802,7 @@ right: 0%;
  
 }
 .porfolio__link{
-  width: 200px;
+  width: 250px;
   background-color: rgb(5, 11, 21);
   color:  rgb(238, 66, 88);
   padding: 1%;
