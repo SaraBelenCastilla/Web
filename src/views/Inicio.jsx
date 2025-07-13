@@ -95,7 +95,7 @@ const Inicio =()=>{
          loop
          autoplay
        /></a>  */}
-</div>
+{/* </div> */}
     
     </section>
      
