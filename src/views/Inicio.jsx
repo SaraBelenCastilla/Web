@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactPlayer from 'react-player'
   import video from '../assets/video.mp4'
   import Vertical from '../assets/vertical.mp4'
@@ -32,7 +32,7 @@ import { useEffect } from 'react'
 
 const Inicio =()=>{
   const isMobile = useMediaQuery({ maxWidth: 1025 }); // Detecta si la pantalla es menor a 7
-  
+  const ReactPlayer = lazy(() => import('react-player'))
   return (
     <>
    
@@ -43,14 +43,16 @@ const Inicio =()=>{
     <section id='section1' className='primera'>
       <div className='loop'>
      
-           <ReactPlayer
-            url={video}
-            playing={true}
-            muted={true}
-            width="100%"
-            height="100%"
-            controls={true}
-          /> 
+         <Suspense fallback={<div>Cargando video...</div>}>
+      <ReactPlayer
+        url={video}
+        playing={true}
+        muted={true}
+        width="100%"
+        height="100%"
+        controls={true}
+      />
+    </Suspense>
        
            {/* <iframe
             src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
@@ -69,7 +71,7 @@ const Inicio =()=>{
                autoplay
              /></a> 
       <div className='loop__vertical'>
-     
+     <Suspense fallback={<div>Cargando video...</div>}>
      <ReactPlayer
       url={Vertical}
       playing={true}
@@ -78,7 +80,7 @@ const Inicio =()=>{
       height="100%"
       controls={true}
     /> 
- 
+   </Suspense>
      {/* <iframe
       src="https://player.vimeo.com/video/1006688970?autoplay=1&muted=1"
       width="100%"
